@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <style>
+        /* Reset default margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya dasar untuk seluruh halaman */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); /* Gradien biru-ke-ungu */
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(44, 62, 80, 0.9); /* Warna header dengan transparansi */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db; /* Efek hover dengan warna biru */
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        .about h2 {
+            font-size: 2.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .about-description p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .about-education {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .about-education h3 {
+            font-size: 2.5em;
+            color: #34495e;
+            margin-bottom: 30px;
+        }
+
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .education-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .education-box:hover {
+            transform: translateY(-5px); /* Efek hover, mengangkat kotak */
+        }
+
+        .education-box h4 {
+            font-size: 1.6em;
+            color: #2c3e50;
+        }
+
+        .education-box p {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(44, 62, 80, 0.9); /* Footer transparan dengan warna yang sama dengan header */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsif untuk perangkat mobile */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .about h2 {
+                font-size: 2.2em;
+            }
+
+            .about-description p,
+            .about-education p {
+                font-size: 1.1em;
+            }
+
+            .education-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-container">
+            <!-- Deskripsi Pribadi -->
+            <div class="about-description">
+                <h2>Tentang Saya</h2>
+                <p>Halo! Nama saya <strong>Lita Eka Kumala</strong>, Alamat saya berada di Desa Gadon Kecamatan Tambakboyo Kab Tuban. Saya dari SMKN Tambakboyo kelas 12 dengan mengambil jurusan RPL Yaitu Rekayasa Perangkat Lunak, Saya mengambil jurusan ini ya karna iseng iseng aja.</p>
+            </div>
+            <p>Hobi saya? Menyusun impian, tapi seringnya ketiduran. Selain itu saya juga hobi makan. Kenapa? Karena makan itu... menenangkan, apalagi dengan makanan yang enak! dan saya punya hobi baru juga lhoo Yaitu jadi ahli dalam menghindari pekerjaan</p>
+
+            <!-- Pendidikan -->
+            <div class="about-education">
+                <h3>Pendidikan</h3>
+                <div class="education-container">
+                    <div class="education-box">
+                        <h4>Taman Kanak-Kanak (TK)</h4>
+                        <p><strong>Tahun Masuk:</strong> 2011, <strong>Tahun Lulus:</strong> 2013</p>
+                        <p>TK ALMUSTAQIM SIDOARDJO</p>
+                    </div>
+                    <div class="education-box">
+                        <h4>SD Negeri </h4>
+                        <p><strong>Tahun Masuk:</strong> 2013, <strong>Tahun Lulus:</strong> 2019</p>
+                        <p>SD NEGERI GADON.</p>
+                    </div>
+                    <div class="education-box">
+                        <h4>SMP Negeri </h4>
+                        <p><strong>Tahun Masuk:</strong> 2019, <strong>Tahun Lulus:</strong> 2022</p>
+                        <p>SMP NEGERI TAMBAKBOYO.</p>
+                    </div>
+                    <div class="education-box">
+                        <h4>SMK Negeri</h4>
+                        <p><strong>Tahun Masuk:</strong> 2022, <strong>Tahun Lulus:</strong> 4 bulan lagi</p>
+                        <p>SMKN TAMBAKBOYO DENGAN KEAHLIAN RPL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nama Anda. All rights reserved.</p>
+    </footer>
+</body>
+</html>
